@@ -5,7 +5,7 @@ module.exports = merge(common, {
     devServer: {
         contentBase: './dist',
         //  默认端口8080，可不填
-        port: 8081,
+        port: 8080,
         //  热更新，无需刷新
         hot: true
     }

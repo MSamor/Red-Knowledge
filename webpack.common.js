@@ -13,7 +13,7 @@ module.exports = {
     plugins: [
         //  自动清空dist目录
         // new CleanWebpackPlugin(),
-
+        new webpack.HotModuleReplacementPlugin(),
         new webpack.ProvidePlugin({
             $: 'jquery'
         }),
