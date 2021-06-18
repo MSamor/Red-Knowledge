@@ -84,13 +84,15 @@
   background-color: rgba(49, 49, 49, 0.7);
 }
 .cover .toastPhone {
+  background-image: url(../images/33bc86aa1aead5e0e87d1f18ef7cc1ae.png);
+  background-size: 100% 100%;
   height: 3rem;
-  width: 14rem;
+  width: 8rem;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 71%;
   margin-left: -7rem;
-  margin-top: -3.5rem;
+  margin-top: -4.5rem;
 }
 .cover .inputBox {
   height: 3rem;
@@ -101,7 +103,7 @@
   margin-left: -7rem;
   margin-top: -1.5rem;
   color: white;
-  background-image: url(../images/041dada8d320510544978b17af43f4f6.png);
+  background-image: url(../images/1d8c05bc98cabf065a3078ec149841fa.png);
   background-size: 100% 100%;
 }
 .cover .inputBox .input {
@@ -149,7 +151,7 @@
 .indexPage {
   height: 100%;
   width: 100%;
-  background-image: url(../images/30daf78d469724c0c1d12294e6edf480.png);
+  background-image: url(../images/f1a6615c3fbba9c5855a8c3c10ffea87.png);
   background-size: 100% 100%;
 }
 .indexPage .logoindex img {
@@ -173,7 +175,7 @@
 .introducePage {
   height: 100%;
   width: 100%;
-  background-image: url(../images/144268de1ee2438bfac5cc7cffb18b7d.png);
+  background-image: url(../images/42644e5f3b2b81ec8d98a9e7881c3ad1.png);
   background-size: 100% 100%;
 }
 .introducePage .logo100 img {
@@ -197,7 +199,7 @@
 .startPage {
   height: 100%;
   width: 100%;
-  background-image: url(../images/84a5bca1d2413d3b1c2a516fde0747a7.png);
+  background-image: url(../images/fd943b3fdd714f894be0788eefb9fc53.png);
   background-size: 100% 100%;
 }
 .startPage .logo100 img {
@@ -220,7 +222,7 @@
 }
 .indexPageMain {
   font-size: 1rem;
-  background-image: url(../images/84a5bca1d2413d3b1c2a516fde0747a7.png);
+  background-image: url(../images/fd943b3fdd714f894be0788eefb9fc53.png);
   background-size: 100% 100%;
   position: absolute;
   height: 100%;
@@ -234,7 +236,7 @@
   margin-top: 1rem;
 }
 .indexPageMain .top {
-  background-image: url(../images/c83bae1c67c17e9247453dd2b2607088.png);
+  background-image: url(../images/e17ad230a4d9140442f9561b2821e6a3.png);
   background-size: 100% 100%;
   height: 26rem;
   width: 19rem;
@@ -247,10 +249,11 @@
   margin: 0 auto;
   margin-top: 0.4rem;
   color: #ffffff;
+  font-size: 1.5rem;
   letter-spacing: 0.3rem;
   text-align: center;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .indexPageMain .top .question {
   color: #ffffff;
@@ -258,7 +261,8 @@
   width: 16rem;
   height: 5rem;
   margin: 0 auto;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  text-align: left;
 }
 .indexPageMain .top .select {
   height: 9rem;
@@ -266,28 +270,41 @@
   display: flex;
   flex-wrap: wrap;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 0.95rem;
   position: absolute;
   bottom: 5rem;
   left: 50%;
   margin-left: -8rem;
+  text-align: left;
 }
 .indexPageMain .top .select img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
   vertical-align: middle;
   margin-right: 0.5rem;
+  align-self: center;
 }
 .indexPageMain .top .select div {
   width: 16rem;
-  height: 1.5rem;
+  height: 2rem;
   z-index: 99999999999999;
   display: flex;
   vertical-align: middle;
   justify-content: left;
 }
-.indexPageMain .top .select div span {
+.indexPageMain .top .select div span:nth-child(2) {
+  align-self: center;
+  line-height: 1rem;
+}
+.indexPageMain .top .select div span:nth-child(3) {
   vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  align-self: center;
+  line-height: 1rem;
 }
 .indexPageMain .top .toastBad,
 .indexPageMain .top .toastIncorrect {
@@ -328,12 +345,17 @@
 .indexPageMain .activity img {
   width: 18rem;
 }
+@font-face {
+  font-family: "huakang";
+  src: url(../fonts/华康宋体W12.ttf);
+}
 .reportPage {
   font-size: 1rem;
-  background-image: url(../images/f909da7cb6fa30f3c95ae16e986c5270.png);
+  background-image: url(../images/8427e99cfe4dfb07c53a8db3621dd3c4.png);
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 .reportPage .cover {
   z-index: 99;
@@ -379,37 +401,41 @@
   box-shadow: #919191 0 0 50px;
 }
 .reportPage .top {
-  background-image: url(../images/5abeab903d839931eacb45e4e8e33775.png);
+  background-image: url(../images/7e34760b774678f6f21e4ac8505f1058.png);
   background-size: 100% 100%;
-  height: 13rem;
-  width: 78%;
+  height: 4rem;
+  width: 5.4rem;
   z-index: 2;
-  margin: 0 auto;
+  margin: 24px auto;
+  overflow: hidden;
 }
 .reportPage .middle {
-  height: 8rem;
+  height: 9rem;
   width: 18rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
-  margin-top: -21%;
   letter-spacing: 0.3rem;
   font-size: 1.1rem;
+  font-family: "huakang";
+  font-weight: lighter;
+}
+.reportPage .middle .bigbigText {
+  font-size: 2.5rem;
 }
 .reportPage .middle div {
-  line-height: 1.5rem;
+  line-height: 1.69rem;
   color: blanchedalmond;
 }
 .reportPage .middle div .bigText {
-  font-size: 1.7rem;
-  color: gold;
-  font-style: oblique;
+  font-size: 2rem;
+  color: #f8fbd8;
 }
 .reportPage .indexPageMain {
   font-size: 1rem;
-  background-image: url(../images/2bfbd59990de63aad162d6be5bea6902.png);
+  background-image: url(../images/e493da56b822f13434b9820a347a6ce5.png);
   background-size: 100% 100%;
   position: absolute;
   height: 100%;
@@ -429,54 +455,53 @@
   display: flex;
 }
 .reportPage .indexPageMain .bottomBtn .something {
-  background-image: url(../images/1dce514909defd1b18c2f53e676221d1.png);
+  background-image: url(../images/593ed7cb3bf5238f5f6006fdf23dd2fc.png);
   background-size: 100% 100%;
   height: 3rem;
   width: 7rem;
 }
 .reportPage .indexPageMain .bottomBtn .again {
-  background-image: url(../images/cc4ea6cb431708ed7959669b5a0a63a2.png);
+  background-image: url(../images/32f1a23987460da297a98d9f162cd6ad.png);
   background-size: 100% 100%;
   height: 3rem;
   width: 7rem;
 }
 .reportPage .bottom {
-  background-image: url(../images/2bfbd59990de63aad162d6be5bea6902.png);
+  background-image: url(../images/e493da56b822f13434b9820a347a6ce5.png);
   background-size: 100% 100%;
-  height: 27rem;
-  width: 96%;
+  height: 18rem;
+  width: 88%;
   z-index: 2;
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -48%;
+  bottom: 8.3rem;
+  left: 52%;
+  margin-left: -47%;
 }
 .reportPage .bottom .line {
-  background-image: url(../images/96056a0fa583201d1641dfa5d7f9ad3c.png);
-  background-size: 100% 100%;
   height: 13rem;
-  width: 14rem;
+  width: 17rem;
   margin: 0 auto;
   overflow: hidden;
   margin-top: 6rem;
 }
 .reportPage .bottom .line .textbox {
-  height: 11rem;
+  height: 13rem;
   width: 17rem;
-  margin-top: 2.5rem;
+  margin-top: 0.33rem;
   color: white;
 }
 .reportPage .bottom .line .textbox div {
-  line-height: 2.1rem;
-  width: 13rem;
+  line-height: 1.67rem;
+  width: 17rem;
   display: flex;
   justify-content: space-around;
 }
 .reportPage .bottom .line .textbox div span:nth-child(1) {
-  width: 2rem;
+  width: 1rem;
 }
 .reportPage .bottom .line .textbox div span:nth-child(2) {
-  width: 8rem;
+  width: 9rem;
+  margin-left: -0.5rem;
 }
 .reportPage .bottom .line .textbox div span:nth-child(3) {
   width: 3rem;
@@ -485,23 +510,35 @@
   position: absolute;
   height: 3rem;
   width: 17rem;
-  bottom: 4rem;
+  bottom: 4.8rem;
   left: 50%;
-  margin-left: -8rem;
+  margin-left: 0rem;
   z-index: 6;
   display: flex;
+  transform: translateX(-50%);
+  justify-content: space-around;
 }
 .reportPage .indexPageMainBtn .bottomBtn .something {
-  background-image: url(../images/1dce514909defd1b18c2f53e676221d1.png);
+  background-image: url(../images/593ed7cb3bf5238f5f6006fdf23dd2fc.png);
   background-size: 100% 100%;
   height: 3rem;
   width: 7rem;
 }
 .reportPage .indexPageMainBtn .bottomBtn .again {
-  background-image: url(../images/cc4ea6cb431708ed7959669b5a0a63a2.png);
+  background-image: url(../images/32f1a23987460da297a98d9f162cd6ad.png);
   background-size: 100% 100%;
   height: 3rem;
   width: 7rem;
+}
+.reportPage .activity {
+  position: absolute;
+  width: 18rem;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.reportPage .activity img {
+  width: 18rem;
 }
 @keyframes loading-line {
   0% {

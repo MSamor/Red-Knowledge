@@ -168,20 +168,20 @@ function shareTo() {
 
     wx.ready(function () {
         wx.onMenuShareAppMessage({
-            title: '闹元宵猜灯谜', // 分享标题
-            desc: '开动脑筋，新年好礼赢回家！', // 分享描述
+            title: '建党百年红色知识竞赛', // 分享标题
+            desc: '铭记历史，不忘初心，牢记使命。', // 分享描述
             link: location.href.split('#')[0], //正式环境地址
-            imgUrl: "https://www.codebest.cn/riddle.jpg", //小图标地址
+            imgUrl: "https://h5.yllh.online/PROD-RedKnowlege/red.jpg", //小图标地址
             fail: function (res) {
                 alert(JSON.stringify(res));
             },
             success: function (res) {}
         });
         wx.onMenuShareTimeline({
-            title: '闹元宵猜灯谜', // 分享标题
-            desc: '开动脑筋，新年好礼赢回家！', // 分享描述
+            title: '建党百年红色知识竞赛', // 分享标题
+            desc: '铭记历史，不忘初心，牢记使命。', // 分享描述
             link: location.href.split('#')[0], //正式环境地址
-            imgUrl: "https://www.codebest.cn/riddle.jpg", //小图标地址
+            imgUrl: "https://h5.yllh.online/PROD-RedKnowlege/red.jpg", //小图标地址
             fail: function (res) {
                 alert(JSON.stringify(res));
             },
@@ -228,7 +228,8 @@ function questionFn() {
         $(".select > div").eq(1).find("span")[1].innerText = question[questionIndex].answerb;
         $(".select > div").eq(2).find("span")[1].innerText = question[questionIndex].answerc;
         $(".select > div").eq(3).find("span")[1].innerText = question[questionIndex].answerd;
-        $(".question").text("“" + question[questionIndex].question + "”(" + question[questionIndex].requirement + ")");
+        // $(".question").text("“" + question[questionIndex].question + "”(" + question[questionIndex].requirement + ")");
+        $(".question").text(question[questionIndex].question);
         selectAnswer()
     }
 
@@ -325,7 +326,7 @@ function questionFn() {
                                 });
                                 $.ajax({
                                     type: "get",
-                                    url: "https://h5.yllh.online:5000/riddle/rank/all?page=1&size=5",
+                                    url: "https://h5.yllh.online:5000/riddle/rank/all?page=1&size=7",
                                     success: function (rankRes) {
                                         console.log(rankRes);
                                         let html = ""

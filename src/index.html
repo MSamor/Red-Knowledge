@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>红色知识竞赛</title>
+    <title>建党百年红色知识竞赛</title>
     <script src="https://res2.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
@@ -88,10 +88,11 @@
                     </div>
                     <!-- 答题 -->
                     <div class="indexPageMain hidden">
-                        <!-- 蒙版 -->
+                        <!-- 手机号蒙版 -->
                         <div class="cover hidden animate__animated animate__fadeIn">
                             <div class="inputBox">
-                                <div class="toastPhone">请输入您的手机号：</div>
+                                <!-- <div class="toastPhone">请输入您的手机号：</div> -->
+                                <div class="toastPhone"></div>
                                 <input id="inputPhone" class="input" autocomplete="off" type="text" />
                             </div>
                         </div>
@@ -106,19 +107,19 @@
                             <div class="select">
                                 <div data="A" class="noSelect">
                                     <img src="./img/answer/no-select.png" alt="" srcset="">
-                                    <span>Ａ.</span><span class="an"></span>
+                                    <span>A.</span><span class="an"></span>
                                 </div>
                                 <div data="B" class="noSelect">
                                     <img src="./img/answer/no-select.png" alt="" srcset="">
-                                    <span>Ｂ.</span><span class="an"></span>
+                                    <span>B.</span><span class="an"></span>
                                 </div>
                                 <div data="C" class="noSelect">
                                     <img src="./img/answer/no-select.png" alt="" srcset="">
-                                    <span>Ｃ.</span><span class="an"></span>
+                                    <span>C.</span><span class="an"></span>
                                 </div>
                                 <div data="D" class="noSelect">
                                     <img src="./img/answer/no-select.png" alt="" srcset="">
-                                    <span>Ｄ.</span><span class="an"></span>
+                                    <span>D.</span><span class="an"></span>
                                 </div>
                             </div>
                             <div class="toastBad hidden">(回答错误，正确答案:<span class="incorrect"></span>)</div>
@@ -131,11 +132,7 @@
                         </div>
                     </div>
                     <!-- 排行榜 -->
-                    <!-- 结果页 -->
                     <div class="reportPage hidden animate__fadeIn animate__animated">
-                        <div class="up">
-                            <img class="animate__fadeOutUp animate__animated animate__infinite" src="./img/up.png">
-                        </div>
                         <!-- 蒙版 -->
                         <div class="cover hidden animate__animated animate__fadeIn">
                         </div>
@@ -146,7 +143,8 @@
                         </div>
                         <div class="top"></div>
                         <div class="middle">
-                            <div>恭喜你，本轮您共猜对 <span id="score" class="bigText"></span> 题</div>
+                            <div class="bigbigText">恭喜你!</div>
+                            <div>本轮您共答对 <span id="score" class="bigText"></span> 题</div>
                             <div>累计共答对 <span id="resScore" class="bigText"></span> 题</div>
                             <div>当前排名 <span id="rownum" class="bigText"></span> 位</div>
                         </div>
@@ -161,6 +159,9 @@
                                 <div class="something"></div>
                                 <div class="again"></div>
                             </div>
+                        </div>
+                        <div class="activity">
+                            <img class="ani4 animate__animated animate__fadeInUp" src="./img/introduce/主办方.png" alt="">
                         </div>
                     </div>
                 </div>
