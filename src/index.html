@@ -1,12 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>传承红色文化</title>
+    <title>建党百年红色知识竞赛</title>
+    <script src="https://res2.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
+
 <body>
-    首页
+    <div class="main">
+        <!-- 背景音乐按钮 -->
+        <div class="musicBtn">
+            <div class="ban hidden"></div>
+            <img class="musicImg" src="./img/music.png" />
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- 首页 -->
+                <div class="swiper-slide">
+                    <div class="up">
+                        <img class="animate__fadeOutUp animate__animated animate__infinite" src="./img/up.png">
+                    </div>
+                    <div class="indexPage">
+                        <div class="logoindex animate__fadeInDown animate__animated ">
+                            <img src="./img/index/顶部文字.png" alt="">
+                        </div>
+                        <div class="bigtext animate__animated animate__backInUp ">
+                            <img src="./img/index/大字.png" alt="">
+                        </div>
+                        <div class="activity">
+                            <img class="ani animate__animated animate__fadeInUp" src="./img/introduce/主办方.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 普及页 -->
+                <div class="swiper-slide">
+                    <div class="up">
+                        <img class="animate__fadeOutUp animate__animated animate__infinite" src="./img/up.png">
+                    </div>
+                    <div class="introducePage">
+                        <div class="logo100 hidden animate__animated animate__fadeInDown">
+                            <img src="./img/introduce/100.png" alt="">
+                        </div>
+                        <div class="introduce hidden animate__animated animate__fadeInUp">
+                            <img src="./img/introduce/文字.png" alt="">
+                        </div>
+                        <div class="activity">
+                            <img class="ani2 hidden animate__animated animate__fadeInUp" src="./img/introduce/主办方.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 参赛规则 -->
+                <div class="swiper-slide">
+                    <div class="up">
+                        <img class="animate__fadeOutUp animate__animated animate__infinite" src="./img/up.png">
+                    </div>
+                    <div class="customPage introducePage">
+                        <div class="logo100 hidden animate__animated animate__fadeInDown">
+                            <img src="./img/introduce/100.png" alt="">
+                        </div>
+                        <div class="introduce hidden animate__animated animate__fadeInUp">
+                            <img src="./img/rule/文字.png" alt="">
+                        </div>
+                        <div class="activity">
+                            <img class="ani3 hidden animate__animated animate__fadeInUp" src="./img/introduce/主办方.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 开始答题页 -->
+                <div class="swiper-slide">
+                    <!-- 开始答题 -->
+                    <div class="startPage">
+                        <div class="logo100 animate__animated animate__fadeInDown">
+                            <img src="./img/introduce/100.png" alt="">
+                        </div>
+                        <div class="start animate__animated animate__fadeInRight">
+                            <img src="./img/answer/开始答题.png" alt="">
+                        </div>
+                        <div class="activity">
+                            <img class="ani4 hidden animate__animated animate__fadeInUp" src="./img/introduce/主办方.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <!-- 答题 -->
+                    <div class="indexPageMain hidden">
+                        <!-- 手机号蒙版 -->
+                        <div class="cover hidden animate__animated animate__fadeIn">
+                            <div class="inputBox">
+                                <!-- <div class="toastPhone">请输入您的手机号：</div> -->
+                                <div class="toastPhone"></div>
+                                <input id="inputPhone" class="input" autocomplete="off" type="text" />
+                            </div>
+                        </div>
+                        <div class="logo100">
+                            <img src="./img/introduce/100.png" alt="">
+                        </div>
+                        <div class="top animate__fadeInDown animate__animated">
+                            <div class="answer-title"></div>
+                            <div class="question">
+
+                            </div>
+                            <div class="select">
+                                <div data="A" class="noSelect">
+                                    <img src="./img/answer/no-select.png" alt="" srcset="">
+                                    <span>A.</span><span class="an"></span>
+                                </div>
+                                <div data="B" class="noSelect">
+                                    <img src="./img/answer/no-select.png" alt="" srcset="">
+                                    <span>B.</span><span class="an"></span>
+                                </div>
+                                <div data="C" class="noSelect">
+                                    <img src="./img/answer/no-select.png" alt="" srcset="">
+                                    <span>C.</span><span class="an"></span>
+                                </div>
+                                <div data="D" class="noSelect">
+                                    <img src="./img/answer/no-select.png" alt="" srcset="">
+                                    <span>D.</span><span class="an"></span>
+                                </div>
+                            </div>
+                            <div class="toastBad hidden">(回答错误，正确答案:<span class="incorrect"></span>)</div>
+                            <div class="toastIncorrect hidden">(回答正确)</div>
+                            <div class="next hidden"></div>
+                            <div class="report hidden"></div>
+                        </div>
+                        <div class="activity">
+                            <img class="ani4 animate__animated animate__fadeInUp" src="./img/introduce/主办方.png" alt="">
+                        </div>
+                    </div>
+                    <!-- 排行榜 -->
+                    <div class="reportPage hidden animate__fadeIn animate__animated">
+                        <!-- 蒙版 -->
+                        <div class="cover hidden animate__animated animate__fadeIn">
+                        </div>
+                        <!-- 显示图片的方框 -->
+                        <div class="img-share hidden animate__animated animate__fadeIn">
+                            <img class="close" src="./img/close.png" alt="" srcset="">
+                            <img class="img-share-src " src="./img/luck.jpg" alt="" srcset="">
+                        </div>
+                        <div class="top"></div>
+                        <div class="middle">
+                            <div class="bigbigText">恭喜你!</div>
+                            <div>本轮您共答对 <span id="score" class="bigText"></span> 题</div>
+                            <div>累计共答对 <span id="resScore" class="bigText"></span> 题</div>
+                            <div>当前排名 <span id="rownum" class="bigText"></span> 位</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="line">
+                                <div class="textbox">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indexPageMainBtn">
+                            <div class="bottomBtn">
+                                <div class="something"></div>
+                                <div class="again"></div>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <img class="ani4 animate__animated animate__fadeInUp" src="./img/introduce/主办方.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<audio id="audio" loop="-1" src="./audio/1.mp3" preload autoplay controls="controls" loop="false" hidden="true"></audio>
+
 </html>

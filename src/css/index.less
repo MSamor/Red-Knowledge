@@ -1,0 +1,765 @@
+.main {
+    width: 100%;
+    height: 100%;
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+
+        .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+
+            .swiper-slide {
+                width: 100%;
+                height: 100%;
+                font-size: 5rem;
+                text-align: center;
+                // color: #ffffff;
+                overflow: hidden;
+            }
+
+            .swiper-slide:nth-child(1) {
+                // background-color: rgb(253, 7, 7);
+            }
+
+            .swiper-slide:nth-child(2) {
+                // background-color: yellowgreen;
+            }
+
+            .swiper-slide:nth-child(3) {
+                // background-color: blueviolet;
+            }
+        }
+    }
+}
+
+// 背景音乐按钮开始 
+.musicBtn {
+    z-index: 99999;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    height: 2rem;
+    width: 2rem;
+    border: 2px solid rgb(224, 224, 224);
+    opacity: .9;
+    border-radius: 50%;
+    background-color: rgb(63, 63, 63);
+    font-size: 1rem;
+    padding: .1rem;
+    text-align: center;
+
+    .ban {
+        height: 2px;
+        width: 2.3rem;
+        background-color: rgb(224, 224, 224);
+        position: absolute;
+        transform: translateY(-50%) translateX(-0.1rem) rotate(45deg);
+        top: 50%;
+    }
+
+    .musicImg {
+        height: 1.8rem;
+        width: 1.8rem;
+        vertical-align: top;
+        animation: rotateAni 3s linear infinite;
+
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.musicPaused {
+    animation-play-state: paused !important;
+}
+
+@keyframes rotateAni {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+// 背景音乐按钮结束
+//蒙版
+.cover {
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .5;
+    background-color: rgba(49, 49, 49, 0.7);
+
+    .toastPhone {
+        background-image: url("../img/answer/text.png");
+        background-size: 100% 100%;
+        height: 3rem;
+        width: 8rem;
+        position: absolute;
+        top: 50%;
+        left: 71%;
+        margin-left: -7rem;
+        margin-top: -4.5rem;
+    }
+
+    .inputBox {
+        height: 3rem;
+        width: 14rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -7rem;
+        margin-top: -1.5rem;
+        color: white;
+        background-image: url("../img/answer/input.png");
+        background-size: 100% 100%;
+
+        .input {
+            border: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            text-align: center;
+            font-size: 1.5rem;
+            color: rgb(255, 255, 255);
+            outline: none
+        }
+
+        .input:focus {
+            border: 0;
+        }
+    }
+}
+
+// 雪花效果开始
+.xuehua {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 98%;
+    width: 100%;
+    z-index: 9;
+}
+
+.animate__animated.animate__pulse {
+    --animate-duration: 4s;
+    --animate-timing-function: liner;
+}
+
+//雪花效果结束
+
+//上滑效果开始
+.up {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: .4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    font-size: 2rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .animate__animated.animate__fadeOutUp {
+        --animate-duration: 2s;
+    }
+}
+
+//上滑效果结束
+
+//首页开始
+.indexPage {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/index/底图.png");
+    background-size: 100% 100%;
+
+    .logoindex {
+        img {
+            width: 22rem;
+            margin-top: 2.5rem;
+        }
+    }
+
+    .bigtext {
+        img {
+            width: 20rem;
+            margin-top: 2rem;
+        }
+    }
+
+    .activity {
+        position: absolute;
+        width: 18rem;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            width: 18rem;
+        }
+    }
+}
+
+//首页结束
+
+//普及页开始
+.introducePage {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/introduce/底.png");
+    background-size: 100% 100%;
+
+    .logo100 {
+        img {
+            width: 8rem;
+            margin-top: 2.5rem;
+        }
+    }
+
+    .introduce {
+        img {
+            width: 20rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .activity {
+        position: absolute;
+        width: 18rem;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            width: 18rem;
+        }
+    }
+}
+
+//普及页结束
+
+//答题页开始
+.startPage {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/answer/底图.png");
+    background-size: 100% 100%;
+
+    .logo100 {
+        img {
+            width: 9rem;
+            margin-top: 2.5rem;
+        }
+    }
+
+    .start {
+        img {
+            width: 20rem;
+            margin-top: 2.5rem;
+        }
+    }
+
+    .activity {
+        position: absolute;
+        width: 18rem;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            width: 18rem;
+        }
+    }
+}
+
+//答题页结束
+
+//答题页开始
+.indexPageMain {
+    font-size: 1rem;
+    background-image: url("../img/answer/底图.png");
+    background-size: 100% 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    .logo100 {
+        img {
+            width: 9rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .top {
+        background-image: url("../img/answer/文字框.png");
+        background-size: 100% 100%;
+        height: 26rem;
+        width: 19rem;
+        margin: 0 auto;
+        z-index: 5;
+        overflow: hidden;
+
+        .answer-title {
+            width: 16rem;
+            margin: 0 auto;
+            margin-top: .4rem;
+            color: rgb(255, 255, 255);
+            font-size: 1.5rem;
+            letter-spacing: .3rem;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .question {
+            color: rgb(255, 255, 255);
+            font-size: 1rem;
+            width: 16rem;
+            height: 5rem;
+            margin: 0 auto;
+            margin-top: 1rem;
+            text-align: left;
+        }
+
+        .select {
+            height: 9rem;
+            width: 16rem;
+            display: flex;
+            flex-wrap: wrap;
+            color: rgb(255, 255, 255);
+            font-size: .95rem;
+            position: absolute;
+            bottom: 5rem;
+            left: 50%;
+            margin-left: -8rem;
+            text-align: left;
+
+            img {
+                width: 1.2rem;
+                height: 1.2rem;
+                vertical-align: middle;
+                margin-right: .5rem;
+                align-self: center;
+            }
+
+
+            div {
+                width: 16rem;
+                height: 2rem;
+                z-index: 99999999999999;
+                display: flex;
+                vertical-align: middle;
+                justify-content: left;
+                span:nth-child(2) {
+                    align-self: center;
+                    line-height: 1rem;
+                }
+                span:nth-child(3) {
+                    vertical-align: middle;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    align-self: center;
+                    line-height: 1rem;
+                }
+            }
+        }
+
+        .toastBad,
+        .toastIncorrect {
+            color: rgb(255, 255, 255);
+            font-size: .8rem;
+            height: 1rem;
+            width: 10rem;
+            position: absolute;
+            bottom: 4rem;
+            left: 50%;
+            margin-left: -5rem;
+
+        }
+
+        .next,
+        .report {
+            background-size: 100% 100%;
+            height: 3rem;
+            width: 8.5rem;
+            margin: 0 auto;
+            position: absolute;
+            bottom: .5rem;
+            left: 50%;
+            z-index: 99999;
+            margin-left: -4rem;
+        }
+
+        .next {
+            background-image: url("../img/answer/下一题.png");
+        }
+
+        .report {
+            background-image: url("../img/answer/查询结果.png");
+        }
+    }
+
+    .activity {
+        position: absolute;
+        width: 18rem;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            width: 18rem;
+        }
+    }
+}
+
+//答题页结束
+@font-face {
+    font-family: "huakang";
+    src: url("../font/华康宋体W12.ttf");
+}
+
+//结果页开始
+.reportPage {
+    font-size: 1rem;
+    background-image: url("../img/report/bg.png");
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    .cover {
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: .5;
+        background-color: rgba(61, 61, 61, 0.7);
+    }
+
+    .img-share {
+        width: 90%;
+        height: 80%;
+        z-index: 9999;
+        position: absolute;
+        left: 50%;
+        margin-left: -45%;
+        margin-top: 5rem;
+
+        // border: 1px solid rgb(119, 119, 119);
+        .toast {
+            font-size: 1.3rem;
+            margin-bottom: .5rem;
+            color: rgb(216, 216, 216);
+            text-shadow: 0 0 black;
+
+            .down {
+                width: 1.5rem;
+                height: 1.3rem;
+                vertical-align: middle;
+                transform: rotate(-90deg);
+            }
+        }
+
+        .close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-top: -1rem;
+            margin-right: -1rem;
+            height: 2rem;
+            width: 2rem;
+        }
+
+        .img-share-src {
+            width: 100%;
+            height: 100%;
+            box-shadow: rgb(145, 145, 145) 0 0 50px;
+        }
+    }
+
+    .top {
+        background-image: url("../img/introduce/100.png");
+        background-size: 100% 100%;
+        height: 4rem;
+        width: 5.4rem;
+        z-index: 2;
+        margin: 24px auto;
+        overflow: hidden;
+    }
+
+    .middle {
+        height: 9rem;
+        width: 18rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        letter-spacing: .3rem;
+        font-size: 1.1rem;
+        font-family: "huakang";
+        font-weight: lighter;
+
+        .bigbigText {
+            // font-weight: bold;
+            font-size: 2.5rem;
+        }
+
+        div {
+            line-height: 1.69rem;
+            color: blanchedalmond;
+
+            .bigText {
+                font-size: 2rem;
+                color: rgb(248, 251, 216);
+                // font-style: oblique;
+            }
+        }
+    }
+
+    .indexPageMain {
+        font-size: 1rem;
+        background-image: url("../img/report/kuang.png");
+        background-size: 100% 100%;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 3;
+
+        .bottomBtn {
+            position: absolute;
+            height: 3rem;
+            width: 17rem;
+            bottom: 4rem;
+            left: 50%;
+            margin-left: -8rem;
+            z-index: 6;
+            display: flex;
+
+            .something {
+                background-image: url("../img/report/info.png");
+                background-size: 100% 100%;
+                height: 3rem;
+                width: 7rem;
+            }
+
+            .again {
+                background-image: url("../img/report/again.png");
+                background-size: 100% 100%;
+                height: 3rem;
+                width: 7rem;
+            }
+        }
+    }
+
+
+
+    .bottom {
+        background-image: url("../img/report/kuang.png");
+        background-size: 100% 100%;
+        height: 18rem;
+        width: 88%;
+        z-index: 2;
+        position: absolute;
+        bottom: 8.3rem;
+        left: 52%;
+        margin-left: -47%;
+
+        .line {
+            // background-image: url("../img/report/table.png");
+            // background-size: 100% 100%;
+            height: 13rem;
+            width: 17rem;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-top: 6rem;
+
+            .textbox {
+                height: 13rem;
+                width: 17rem;
+                margin-top: .33rem;
+                color: white;
+
+                div {
+                    line-height: 1.67rem;
+                    width: 17rem;
+                    display: flex;
+                    justify-content: space-around;
+
+                    span:nth-child(1) {
+                        width: 1rem;
+                    }
+
+                    span:nth-child(2) {
+                        width: 9rem;
+                        margin-left: -.5rem;
+                    }
+
+                    span:nth-child(3) {
+                        width: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .indexPageMainBtn {
+
+        .bottomBtn {
+            position: absolute;
+            height: 3rem;
+            width: 17rem;
+            bottom: 4.8rem;
+            left: 50%;
+            margin-left: 0rem;
+            z-index: 6;
+            display: flex;
+            transform: translateX(-50%);
+            justify-content: space-around;
+
+            .something {
+                background-image: url("../img/report/info.png");
+                background-size: 100% 100%;
+                height: 3rem;
+                width: 7rem;
+            }
+
+            .again {
+                background-image: url("../img/report/again.png");
+                background-size: 100% 100%;
+                height: 3rem;
+                width: 7rem;
+            }
+        }
+    }
+
+    .activity {
+        position: absolute;
+        width: 18rem;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            width: 18rem;
+        }
+    }
+
+}
+
+//结果页结束
+
+
+// Power by Maosi
+
+// loading-line动画(从左到右增加)
+@keyframes loading-line {
+    0% {
+        left: 0%;
+        width: 90%;
+    }
+
+    20% {
+        left: 20%;
+        width: 70%;
+    }
+
+    40% {
+        left: 40%;
+        width: 50%;
+    }
+
+    60% {
+        left: 60%;
+        width: 30%;
+    }
+
+    80% {
+        left: 80%;
+        width: 10%;
+    }
+
+    100% {
+        left: 90%;
+        width: 0%;
+    }
+}
+
+//  白色部分动画(从右到左减少)
+@keyframes loading-line-cover {
+    0% {
+        width: 95%;
+    }
+
+    20% {
+        width: 76%;
+    }
+
+    40% {
+        width: 57%;
+    }
+
+    60% {
+        width: 38%;
+    }
+
+    80% {
+        width: 19%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+//loading牛的动画(从左到右位移)
+
+@keyframes loading-row {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 13.34%;
+    }
+
+    40% {
+        left: 26.68%;
+    }
+
+    60% {
+        left: 40.02%;
+    }
+
+    80% {
+        left: 53.36%;
+    }
+
+    100% {
+        left: 66.7%; //  这里要减去右边红布所占的宽度部分 避免重叠
+    }
+}
